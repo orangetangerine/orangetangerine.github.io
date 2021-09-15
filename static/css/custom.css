@@ -1,0 +1,6 @@
+.qrcode {
+  display: inline-block;
+	margin: 0 auto;
+  width: 320px;
+  height: 320px;
+}
