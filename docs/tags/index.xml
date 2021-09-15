@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 写代码养猫</title>
-    <link>http://localhost/tags/</link>
+    <link>https://www.code2cat.xyz/tags/</link>
     <description>Recent content in Tags on 写代码养猫</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://localhost/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://www.code2cat.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

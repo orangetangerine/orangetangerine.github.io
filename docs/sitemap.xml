@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost/python/</loc>
+    <loc>https://www.code2cat.xyz/python/</loc>
     <lastmod>2021-09-14T12:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost/</loc>
+    <loc>https://www.code2cat.xyz/</loc>
     <lastmod>2021-09-14T12:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost/python/minigame-1/</loc>
+    <loc>https://www.code2cat.xyz/python/minigame-1/</loc>
     <lastmod>2021-09-14T12:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost/categories/</loc>
+    <loc>https://www.code2cat.xyz/categories/</loc>
   </url><url>
-    <loc>http://localhost/tags/</loc>
+    <loc>https://www.code2cat.xyz/tags/</loc>
   </url>
 </urlset>
