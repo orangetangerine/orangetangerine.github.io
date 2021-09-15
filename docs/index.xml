@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>写代码养猫</title>
+    <link>http://localhost/</link>
+    <description>Recent content on 写代码养猫</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 14 Sep 2021 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用Python写个文字小游戏（一）</title>
+      <link>http://localhost/python/minigame-1/</link>
+      <pubDate>Tue, 14 Sep 2021 12:00:00 +0800</pubDate>
+      
+      <guid>http://localhost/python/minigame-1/</guid>
+      <description>用Python写个文字小游戏（一） 🔗前段时间老王写了个群友乱斗的文字小游戏，我觉得挺有意思的，决定自己也来写一个玩玩看，顺便写一个系列，连载下去。
+既然是个决斗的游戏，肯定得有”人“，那就来先写个人，取个名叫Hero好了。然后先给角色一个基本属性，大名得有一个，有生命值，然后先加上攻击力和防御力，不妨先hardcode一下：
+class Hero: def __init__(self, name: str, hp: int = 100, attack: int = 10, defence: int = 5): self.name = name self.hp = hp self.attack = attack self.defence = defence 然后还要写一个游戏的主类，负责整个游戏的循环
+class Game: def demo(self): pass # Main loop def run(self): self.demo() 然后就是往demo函数里面先做一个简单能跑起来的逻辑啦。
+总的来说，就是让两个小人较量一下，emmm回合制吧，有一个公式，然后双方会扣除生命值，生命值先掉到0的就失败啦。
+先简单设计一个公式凑合一下：
+伤害值=我方攻击力-对方防御力
+$damage=max(0, ATK_{me}-DEF_{enemy})$
+为了防止对方防御力比我方攻击力高的时候伤害是负数变成给对方回血，做了一丢丢保护。
+然后代码就变成了这样：
+def fight(self, attacker: Hero, defender: Hero) -&amp;gt; bool: &amp;#34;&amp;#34;&amp;#34; :return: true表示决出胜负，否则游戏继续 &amp;#34;&amp;#34;&amp;#34; pass def demo(self): me = Hero(&amp;#39;我&amp;#39;) enemy = Hero(&amp;#39;老板&amp;#39;, defence=0) while True: # fight函数返回true则表示 if self.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>写代码养猫</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.83.1" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+  
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="写代码养猫" />
+    <link href="/index.xml" rel="feed" type="application/rss+xml" title="写代码养猫" />
+  
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+<header class="profile">
+    
+        <img class="avatar" alt="avatar" src="/images/avatar.png" />
+    
+
+    <h1>写代码养猫</h1>
+    
+    
+</header>
+
+<div id="list-page">
+    
+    
+    
+        
+        
+        <section class="item">
+          <div>
+            <h1 class="title"><a href='/python/minigame-1/'>用Python写个文字小游戏（一）</a></h1>
+            <div class ="date">
+                <time datetime="2021-09-14 12:00:00 &#43;0800 CST">Sep 14, 2021</time>  
+            </div>
+          </div>
+
+          
+              <div class="summary">用Python写个文字小游戏（一） 🔗前段时间老王写了个群友乱斗的文字小游戏，我觉得挺有意思的，决定自己也来写一个玩玩看，顺便写一个系列，连载下去。
+既然是个决斗的游戏，肯定得有”人“，那就来先写个人，取个名叫Hero好了。然后先给角色一个基本属性，大名得有一个，有生命值，然后先加上攻击力和防御力，不妨先hardcode一下：
+class Hero: def __init__(self, name: str, hp: int = 100, attack: int = 10, defence: int = 5): self.name = name self.hp = hp self.attack = attack self.defence = defence 然后还要写一个游戏的主类，负责整个游戏的循环
+class Game: def demo(self): pass # Main loop def run(self): self.demo() 然后就是往demo函数里面先做一个简单能跑起来的逻辑啦。
+总的来说，就是让两个小人较量一下，emmm回合制吧，有一个公式，然后双方会扣除生命值，生命值先掉到0的就失败啦。
+先简单设计一个公式凑合一下：
+伤害值=我方攻击力-对方防御力
+$damage=max(0, ATK_{me}-DEF_{enemy})$
+为了防止对方防御力比我方攻击力高的时候伤害是负数变成给对方回血，做了一丢丢保护。
+然后代码就变成了这样：
+def fight(self, attacker: Hero, defender: Hero) -&gt; bool: &#34;&#34;&#34; :return: true表示决出胜负，否则游戏继续 &#34;&#34;&#34; pass def demo(self): me = Hero(&#39;我&#39;) enemy = Hero(&#39;老板&#39;, defence=0) while True: # fight函数返回true则表示 if self.</div>
+          
+
+        </section>
+    
+
+    
+
+
+</div>
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2021 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-cactus-plus'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>
