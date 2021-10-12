@@ -1,4 +1,5 @@
-baseURL = "https://www.code2cat.xyz/"
+baseURL = "https://www.code2cat.xyz/blog"
+#baseURL = "http://localhost"
 languageCode = "zh-cn"
 title = "写代码养猫"
 theme = "hugo-theme-mini"

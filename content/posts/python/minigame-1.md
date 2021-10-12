@@ -1,6 +1,7 @@
 ---
 title: "用Python写个文字小游戏（一）"
 date: 2021-09-14T12:00:00+08:00
+tags: ["Python"]
 draft: false
 ---
 # 用Python写个文字小游戏（一）

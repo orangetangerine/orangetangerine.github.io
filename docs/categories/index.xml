@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 写代码养猫</title>
-    <link>https://www.code2cat.xyz/categories/</link>
+    <link>https://www.code2cat.xyz/blog/categories/</link>
     <description>Recent content in Categories on 写代码养猫</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://www.code2cat.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://www.code2cat.xyz/blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
